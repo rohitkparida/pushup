@@ -1,0 +1,96 @@
+@keyframes fab {
+    100% {
+        transform: scale(1) rotate(0)
+    }
+}
+
+.primary {
+    background: #304FFE;
+}
+
+.dark {
+    background: #212121
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace, sans-serif;
+    cursor: default;
+    user-select: none;
+    outline: none;
+}
+
+html, body {
+    position: relative
+}
+
+/*_________________________*/
+
+.content {
+    overflow: hidden;
+}
+
+.title {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 20px;
+    color: #FFF;
+    margin: 16px 20px;
+}
+
+.highlight{
+    font-weight: bold;
+    color: #304FFE;
+}
+
+.appbar {
+    height: 56px;
+    width: 100vw;
+    z-index: 1;
+}
+
+input {
+    height: calc(100vh - 56px);
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 140px;
+}
+
+#increment{
+    position: absolute;
+    top: 56px;
+}
+
+.fab {
+    position: fixed;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+    transform: scale(0) rotate(-45deg);
+    animation: fab 280ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    will-change: box-shadow, background-color;
+    border: none;
+}
+
+
+.fab:hover {
+    background: #3D5AFE;
+    box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12)
+}
+
+.fab svg {
+    fill: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
