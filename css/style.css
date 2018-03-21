@@ -8,10 +8,9 @@
     background: #304FFE;
 }
 
-.dark {
-    background: #212121
+.black {
+    background: #000
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +24,7 @@ html, body {
     position: relative
 }
 
-/*_________________________*/
+/*____________________
 
 .content {
     overflow: hidden;
