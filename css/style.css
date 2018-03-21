@@ -11,6 +11,7 @@
 .dark {
     background: #000
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +25,7 @@ html, body {
     position: relative
 }
 
-/*____________________
+/*____________________*/
 
 .content {
     overflow: hidden;
@@ -38,7 +39,7 @@ html, body {
     margin: 16px 20px;
 }
 
-.highlight{
+.highlight {
     font-weight: bold;
     color: #304FFE;
 }
@@ -59,7 +60,7 @@ input {
     font-size: 140px;
 }
 
-#increment{
+#increment {
     position: absolute;
     top: 56px;
 }
@@ -79,7 +80,6 @@ input {
     will-change: box-shadow, background-color;
     border: none;
 }
-
 
 .fab:active {
     background: #3D5AFE;
